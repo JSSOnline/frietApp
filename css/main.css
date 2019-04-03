@@ -1,0 +1,21 @@
+.order-table tr td{
+    padding: 0 0;
+    height: 52px;
+}
+
+.order-total{
+    width: 50px;
+}
+
+.order-article{
+    width: 150px;
+}
+
+.order-option{
+    min-width: 100px;
+}
+
+.order-hbs{
+    height: 65px;
+    margin-top: 35px;
+}

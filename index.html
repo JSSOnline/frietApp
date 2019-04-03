@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admicom Friet App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper teal lighten-1">
+                <a href="#" class="brand-logo center">Admicom Friet App</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>Friet Bestel Formulier</h2>
+            <div class="row">
+                <label>Naam:</label>
+                <input type="text">
+            </div>
+            <table class="order-table">
+                <thead>
+                    <td><strong>Frites</strong></td>
+                    <td></td>
+                    <td class="order-article"><strong>Prijs</strong></td>
+                    <td><strong>Aantal</strong></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="order-article">Frites</td>
+                        <td></td>
+                        <td class="order-article">€ 1,65</td>
+                        <td  class="order-total"> 
+                            <label>
+                                <input type="checkbox" />
+                                <span>Ja/Nee</span>
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <td><strong>Snacks</strong></td>
+                    <td class="order-article"></td>
+                    <td class="order-article"><strong>Prijs</strong></td>
+                    <td class="order-total"><strong>Aantal</strong></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frikandel</td>
+                        <td></td>
+                        <td>€ 1,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Frikandel speciaal</td>
+                        <td></td>
+                        <td>€ 2,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Frikandel pindasaus</td>
+                        <td></td>
+                        <td>€ 2,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Frikandel pindaspeciaal</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Macho</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Viandel</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kipkorn</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kipfrikandel</td>
+                        <td></td>
+                        <td>€ 1,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kroket</td>
+                        <td></td>
+                        <td>€ 1,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Goulashkroket</td>
+                        <td></td>
+                        <td>€ 1,90</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Satékroket</td>
+                        <td></td>
+                        <td>€ 1,90</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kwekkeboomkroket</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Groentenkroket</td>
+                        <td></td>
+                        <td>€ 1,90</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kaaskroket</td>
+                        <td></td>
+                        <td>€ 1,90</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Bitterballen (4 st.)</td>
+                        <td></td>
+                        <td>€ 1,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kaassoufflé of Ham/kaassoufflé</td>
+                        <td></td>
+                        <td>€ 1,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Souflesse oude kaas of mozzarella tomaat</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Bamiblok</td>
+                        <td></td>
+                        <td>€ 1,80</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Nasischijf</td>
+                        <td></td>
+                        <td>€ 1,80</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Bamsa (bami/saté)</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Pittige Bami/Bami oriëntal</td>
+                        <td></td>
+                        <td>€ 1,85</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Gehaktbal/gehaktstaaf</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Gehaktbal speciaal</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Mexicano Jaco</td>
+                        <td></td>
+                        <td>€ 3,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Berenhap + chilisaus</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Mexicano + chilisaus</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Curryworst + curry</td>
+                        <td></td>
+                        <td>€ 2,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Sjaslick + chilisaus</td>
+                        <td></td>
+                        <td>€ 2,75</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Shoarmarol + saus</td>
+                        <td></td>
+                        <td>€ 2,65</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Smulrol</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Satérol</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Sitostick</td>
+                        <td></td>
+                        <td>€ 2,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Loempia</td>
+                        <td></td>
+                        <td>€ 3,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Loempia speciaal</td>
+                        <td></td>
+                        <td>€ 4,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Halve Haan</td>
+                        <td></td>
+                        <td>€ 5,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kipnuggets (6 st.)</td>
+                        <td></td>
+                        <td>€ 2,40</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kipfingers (6 st.)</td>
+                        <td></td>
+                        <td>€ 2,40</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kipsaté (3 stokjes)</td>
+                        <td></td>
+                        <td>€ 5,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kabeljauwstick</td>
+                        <td></td>
+                        <td>€ 2,60</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Visstick</td>
+                        <td></td>
+                        <td>€ 2,60</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Mixstick</td>
+                        <td></td>
+                        <td>€ 2,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Knakworst</td>
+                        <td></td>
+                        <td>€ 1,60</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Bockworst</td>
+                        <td></td>
+                        <td>€ 1,90</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <td><strong>Hamburgers</strong></td>
+                    <td></td>
+                    <td class="order-article"><strong>Prijs</strong></td>
+                    <td><strong>Aantal</strong></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="order-article">Hamburger gebakken ei</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Los Angeles (Giant)</td>
+                        <td></td>
+                        <td class="order-article">€ 4,75</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">New York (Giant)</td>
+                        <td></td>
+                        <td class="order-article">€ 4,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Houston (Giant)</td>
+                        <td></td>
+                        <td class="order-article">€ 5,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Houston (Giant)</td>
+                        <td></td>
+                        <td class="order-article">€ 5,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Phoenix (Giant)</td>
+                        <td></td>
+                        <td class="order-article">€ 5,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Detroit (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Honolulu (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Miami (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Nashville (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 4,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Dallas (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,75</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Denver (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Boston (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Las Vegas (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 4,00</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">New Orleans (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 3,50</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">New Orleans (Regular)</td>
+                        <td></td>
+                        <td class="order-article">€ 4,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Arisona (Dubble Bun)</td>
+                        <td></td>
+                        <td class="order-article">€ 7,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="order-article">Kansas (Dubble Bun)</td>
+                        <td></td>
+                        <td class="order-article">€ 7,25</td>
+                        <td class="order-total"><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="input-field col s12 order-hbs">
+                                <select>
+                                    <option value="Martino">Martino</option>
+                                    <option value="Piri-Piri">Piri-Piri</option>
+                                    <option value="Giant">Giant</option>
+                                    <option value="Tartaar">Tartaar</option>
+                                    <option value="Hamburgersaus">Hamburgersaus</option>
+                                    <option value="Joppie">Joppie</option>
+                                    <option value="Samurai">Samurai</option>
+                                    <option value="Sate">Sate</option>
+                                    <option value="Chili">Chili</option>
+                                </select>
+                                <label>Kies Hamburgersaus</label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <td><strong>Broodjes</strong></td>
+                    <td></td>
+                    <td><strong>Prijs</strong></td>
+                    <td><strong>Aantal</strong></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frikandel</td>
+                        <td></td>
+                        <td>€ 2,35</td>
+                        <td><input type="number" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kroket</td>
+                        <td></td>
+                        <td>€ 2,35</td>
+                        <td><input type="number" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
